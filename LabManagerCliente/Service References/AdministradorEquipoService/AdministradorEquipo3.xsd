@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:59293/Administrador/AdministradorEquipo.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Dtos.Basico" />
+  <xs:import schemaLocation="http://localhost:59293/Administrador/AdministradorEquipo.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Dtos" />
+  <xs:element name="getEquipos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FiltroTexto" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Activo" nillable="true" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getEquiposResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Dtos.Basico" minOccurs="0" name="getEquiposResult" nillable="true" type="q1:Lista_View_Equipo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddEquipo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Dtos.Basico" minOccurs="0" name="newEquipo" nillable="true" type="q2:View_Equipo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddEquipoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Dtos" minOccurs="0" name="AddEquipoResult" nillable="true" type="q3:DtoBase" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EditEquipo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Dtos.Basico" minOccurs="0" name="editEquipo" nillable="true" type="q4:View_Equipo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EditEquipoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Dtos" minOccurs="0" name="EditEquipoResult" nillable="true" type="q5:DtoBase" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getHistorial">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EquipoId" type="xs:long" />
+        <xs:element minOccurs="0" name="FechaInicio" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="FechaFin" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getHistorialResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Dtos.Basico" minOccurs="0" name="getHistorialResult" nillable="true" type="q6:Lista_View_Historial_Equipo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsCodigoInventario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="codigo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsCodigoInventarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/Dtos" minOccurs="0" name="IsCodigoInventarioResult" nillable="true" type="q7:DtoBool" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3498b5e2-e951-4acd-bf7d-61ed37ad4dfc" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:59293/Administrador/AdministradorAuxiliar.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AdministradorAuxiliar.xsd" MetadataType="Schema" ID="eb0347a5-d19c-4d97-8ea9-8780e8c67a72" SourceId="1" SourceUrl="http://localhost:59293/Administrador/AdministradorAuxiliar.svc?xsd=xsd2" />
+    <MetadataFile FileName="AdministradorAuxiliar1.xsd" MetadataType="Schema" ID="bf793f01-c6f9-404d-b871-1f371cfa850a" SourceId="1" SourceUrl="http://localhost:59293/Administrador/AdministradorAuxiliar.svc?xsd=xsd3" />
+    <MetadataFile FileName="AdministradorAuxiliar.disco" MetadataType="Disco" ID="616b5495-95ac-416f-b9fc-2d3955ad6a4e" SourceId="1" SourceUrl="http://localhost:59293/Administrador/AdministradorAuxiliar.svc?disco" />
+    <MetadataFile FileName="AdministradorAuxiliar2.xsd" MetadataType="Schema" ID="d9e1dd2b-dda6-4bc3-bfe4-e566830a2828" SourceId="1" SourceUrl="http://localhost:59293/Administrador/AdministradorAuxiliar.svc?xsd=xsd0" />
+    <MetadataFile FileName="AdministradorAuxiliar.wsdl" MetadataType="Wsdl" ID="9fdf7769-0246-4f4a-893d-41ebc0267fc5" SourceId="1" SourceUrl="http://localhost:59293/Administrador/AdministradorAuxiliar.svc?wsdl" />
+    <MetadataFile FileName="AdministradorAuxiliar3.xsd" MetadataType="Schema" ID="81b13c06-7886-46c9-ac0f-0a055b22ed68" SourceId="1" SourceUrl="http://localhost:59293/Administrador/AdministradorAuxiliar.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

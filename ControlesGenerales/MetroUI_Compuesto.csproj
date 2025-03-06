@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FB56F1F1-DED2-43F4-8B4D-D68ED5BAE5AE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MetroUI_Compuesto</RootNamespace>
+    <AssemblyName>MetroUI_Compuesto</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Error.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Error.Designer.cs">
+      <DependentUpon>Error.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EsperaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EsperaForm.Designer.cs">
+      <DependentUpon>EsperaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GridView.Designer.cs">
+      <DependentUpon>GridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IInput.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IInput.Designer.cs">
+      <DependentUpon>IInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InformacionRegistro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InformacionRegistro.Designer.cs">
+      <DependentUpon>InformacionRegistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputFielComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InputFielComboBox.Designer.cs">
+      <DependentUpon>InputFielComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputFielComboBoxSiNo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InputFielComboBoxSiNo.Designer.cs">
+      <DependentUpon>InputFielComboBoxSiNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputFieldDateTime.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InputFieldDateTime.Designer.cs">
+      <DependentUpon>InputFieldDateTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputFieldInteger.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InputFieldInteger.Designer.cs">
+      <DependentUpon>InputFieldInteger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputFieldListBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InputFieldListBox.Designer.cs">
+      <DependentUpon>InputFieldListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputFieldText.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InputFieldText.Designer.cs">
+      <DependentUpon>InputFieldText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mensaje.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Error.resx">
+      <DependentUpon>Error.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EsperaForm.resx">
+      <DependentUpon>EsperaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridView.resx">
+      <DependentUpon>GridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IInput.resx">
+      <DependentUpon>IInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformacionRegistro.resx">
+      <DependentUpon>InformacionRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputFielComboBox.resx">
+      <DependentUpon>InputFielComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputFielComboBoxSiNo.resx">
+      <DependentUpon>InputFielComboBoxSiNo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputFieldDateTime.resx">
+      <DependentUpon>InputFieldDateTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputFieldInteger.resx">
+      <DependentUpon>InputFieldInteger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputFieldListBox.resx">
+      <DependentUpon>InputFieldListBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputFieldText.resx">
+      <DependentUpon>InputFieldText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ERROR.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

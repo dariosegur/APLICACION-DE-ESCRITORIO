@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dtos.Basico" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dtos.Basico" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:59293/PrestamoRecepcion/PrestamoRecepcion.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Dtos" />
+  <xs:complexType name="ArrayOfRestriccion">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Restriccion" nillable="true" type="tns:Restriccion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRestriccion" nillable="true" type="tns:ArrayOfRestriccion" />
+  <xs:complexType name="Restriccion">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Dtos" base="q1:DtoBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Activo" type="xs:boolean" />
+          <xs:element minOccurs="0" name="CreadoId" type="xs:long" />
+          <xs:element minOccurs="0" name="Descripcion" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FechaCreacion" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="FechaModificacion" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ModificadoId" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="RestriccionId" type="xs:int" />
+          <xs:element minOccurs="0" name="Texto" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Restriccion" nillable="true" type="tns:Restriccion" />
+</xs:schema>

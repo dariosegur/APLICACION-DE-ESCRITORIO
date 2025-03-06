@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:59293/Administrador/AdministradorMulta.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Dtos.Basico" />
+  <xs:import schemaLocation="http://localhost:59293/Administrador/AdministradorMulta.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Dtos" />
+  <xs:element name="getMultas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UsuarioId" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getMultasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Dtos.Basico" minOccurs="0" name="getMultasResult" nillable="true" type="q1:Lista_View_Multas" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddMulta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Dtos.Basico" minOccurs="0" name="newMulta" nillable="true" type="q2:View_Multas" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddMultaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Dtos" minOccurs="0" name="AddMultaResult" nillable="true" type="q3:DtoBase" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EditMulta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Dtos.Basico" minOccurs="0" name="editMulta" nillable="true" type="q4:View_Multas" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EditMultaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Dtos" minOccurs="0" name="EditMultaResult" nillable="true" type="q5:DtoBase" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getEstadosMulta">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getEstadosMultaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Dtos.Basico" minOccurs="0" name="getEstadosMultaResult" nillable="true" type="q6:Lista_View_EstadoMulta" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

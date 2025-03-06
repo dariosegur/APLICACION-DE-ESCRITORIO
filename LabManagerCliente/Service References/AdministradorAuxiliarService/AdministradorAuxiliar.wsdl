@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="AdministradorAuxiliar" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="BasicHttpsBinding_IAdministradorAuxiliar_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false" />
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:59293/Administrador/AdministradorAuxiliar.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:59293/Administrador/AdministradorAuxiliar.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:59293/Administrador/AdministradorAuxiliar.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Dtos.Basico" />
+      <xsd:import schemaLocation="http://localhost:59293/Administrador/AdministradorAuxiliar.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Dtos" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IAdministradorAuxiliar_getAuxiliares_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAuxiliares" />
+  </wsdl:message>
+  <wsdl:message name="IAdministradorAuxiliar_getAuxiliares_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAuxiliaresResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdministradorAuxiliar_getAuxiliaresActivos_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAuxiliaresActivos" />
+  </wsdl:message>
+  <wsdl:message name="IAdministradorAuxiliar_getAuxiliaresActivos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAuxiliaresActivosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdministradorAuxiliar_AddAuxiliar_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddAuxiliar" />
+  </wsdl:message>
+  <wsdl:message name="IAdministradorAuxiliar_AddAuxiliar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddAuxiliarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdministradorAuxiliar_EditAuxiliar_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditAuxiliar" />
+  </wsdl:message>
+  <wsdl:message name="IAdministradorAuxiliar_EditAuxiliar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditAuxiliarResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IAdministradorAuxiliar">
+    <wsdl:operation name="getAuxiliares">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdministradorAuxiliar/getAuxiliares" message="tns:IAdministradorAuxiliar_getAuxiliares_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdministradorAuxiliar/getAuxiliaresResponse" message="tns:IAdministradorAuxiliar_getAuxiliares_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAuxiliaresActivos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdministradorAuxiliar/getAuxiliaresActivos" message="tns:IAdministradorAuxiliar_getAuxiliaresActivos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdministradorAuxiliar/getAuxiliaresActivosResponse" message="tns:IAdministradorAuxiliar_getAuxiliaresActivos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddAuxiliar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdministradorAuxiliar/AddAuxiliar" message="tns:IAdministradorAuxiliar_AddAuxiliar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdministradorAuxiliar/AddAuxiliarResponse" message="tns:IAdministradorAuxiliar_AddAuxiliar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditAuxiliar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdministradorAuxiliar/EditAuxiliar" message="tns:IAdministradorAuxiliar_EditAuxiliar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdministradorAuxiliar/EditAuxiliarResponse" message="tns:IAdministradorAuxiliar_EditAuxiliar_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IAdministradorAuxiliar" type="tns:IAdministradorAuxiliar">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getAuxiliares">
+      <soap:operation soapAction="http://tempuri.org/IAdministradorAuxiliar/getAuxiliares" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAuxiliaresActivos">
+      <soap:operation soapAction="http://tempuri.org/IAdministradorAuxiliar/getAuxiliaresActivos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddAuxiliar">
+      <soap:operation soapAction="http://tempuri.org/IAdministradorAuxiliar/AddAuxiliar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditAuxiliar">
+      <soap:operation soapAction="http://tempuri.org/IAdministradorAuxiliar/EditAuxiliar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpsBinding_IAdministradorAuxiliar" type="tns:IAdministradorAuxiliar">
+    <wsp:PolicyReference URI="#BasicHttpsBinding_IAdministradorAuxiliar_policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getAuxiliares">
+      <soap:operation soapAction="http://tempuri.org/IAdministradorAuxiliar/getAuxiliares" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAuxiliaresActivos">
+      <soap:operation soapAction="http://tempuri.org/IAdministradorAuxiliar/getAuxiliaresActivos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddAuxiliar">
+      <soap:operation soapAction="http://tempuri.org/IAdministradorAuxiliar/AddAuxiliar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditAuxiliar">
+      <soap:operation soapAction="http://tempuri.org/IAdministradorAuxiliar/EditAuxiliar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AdministradorAuxiliar">
+    <wsdl:port name="BasicHttpBinding_IAdministradorAuxiliar" binding="tns:BasicHttpBinding_IAdministradorAuxiliar">
+      <soap:address location="http://localhost:59293/Administrador/AdministradorAuxiliar.svc" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpsBinding_IAdministradorAuxiliar" binding="tns:BasicHttpsBinding_IAdministradorAuxiliar">
+      <soap:address location="https://localhost:44300/Administrador/AdministradorAuxiliar.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

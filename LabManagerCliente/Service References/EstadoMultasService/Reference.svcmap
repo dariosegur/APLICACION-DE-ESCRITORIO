@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="434f53ca-5d59-4b6d-bb9e-03b8a4ad1d71" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:59293/Reportes/EstadoMultas.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="EstadoMultas.xsd" MetadataType="Schema" ID="3ee0e195-bd15-447e-9143-27380ad65fe4" SourceId="1" SourceUrl="http://localhost:59293/Reportes/EstadoMultas.svc?xsd=xsd2" />
+    <MetadataFile FileName="EstadoMultas1.xsd" MetadataType="Schema" ID="c647743f-b8ac-4dec-8c93-5663211a04d6" SourceId="1" SourceUrl="http://localhost:59293/Reportes/EstadoMultas.svc?xsd=xsd3" />
+    <MetadataFile FileName="EstadoMultas2.xsd" MetadataType="Schema" ID="c8d5bb93-39e8-4554-8b69-e24d340cbac6" SourceId="1" SourceUrl="http://localhost:59293/Reportes/EstadoMultas.svc?xsd=xsd0" />
+    <MetadataFile FileName="EstadoMultas3.xsd" MetadataType="Schema" ID="1fcd9708-bc28-4bef-92ae-b699bfc53677" SourceId="1" SourceUrl="http://localhost:59293/Reportes/EstadoMultas.svc?xsd=xsd1" />
+    <MetadataFile FileName="EstadoMultas.wsdl" MetadataType="Wsdl" ID="a3306122-d248-4b80-94eb-217b4b84353b" SourceId="1" SourceUrl="http://localhost:59293/Reportes/EstadoMultas.svc?wsdl" />
+    <MetadataFile FileName="EstadoMultas.disco" MetadataType="Disco" ID="be222d97-b102-4fa0-b845-77c38d71756e" SourceId="1" SourceUrl="http://localhost:59293/Reportes/EstadoMultas.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c72855a0-b621-47f9-ad4e-f09945e87d42" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:59293/Administrador/AdministradorFacultad.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AdministradorFacultad.xsd" MetadataType="Schema" ID="bc020412-3dfe-4209-b441-5d48eca05468" SourceId="1" SourceUrl="http://localhost:59293/Administrador/AdministradorFacultad.svc?xsd=xsd1" />
+    <MetadataFile FileName="AdministradorFacultad1.xsd" MetadataType="Schema" ID="f37112f2-b6bf-4b92-8f75-2bd63c7f6512" SourceId="1" SourceUrl="http://localhost:59293/Administrador/AdministradorFacultad.svc?xsd=xsd3" />
+    <MetadataFile FileName="AdministradorFacultad.disco" MetadataType="Disco" ID="84e8f35c-4398-412f-abbe-62b3a7c557d9" SourceId="1" SourceUrl="http://localhost:59293/Administrador/AdministradorFacultad.svc?disco" />
+    <MetadataFile FileName="AdministradorFacultad2.xsd" MetadataType="Schema" ID="3f3992d8-afde-463e-9db5-ac0b0efffec5" SourceId="1" SourceUrl="http://localhost:59293/Administrador/AdministradorFacultad.svc?xsd=xsd0" />
+    <MetadataFile FileName="AdministradorFacultad3.xsd" MetadataType="Schema" ID="ac93b17e-f860-42dc-9357-058df8cfd204" SourceId="1" SourceUrl="http://localhost:59293/Administrador/AdministradorFacultad.svc?xsd=xsd2" />
+    <MetadataFile FileName="AdministradorFacultad.wsdl" MetadataType="Wsdl" ID="037fc041-3b7a-4b74-9b1c-561791f656ea" SourceId="1" SourceUrl="http://localhost:59293/Administrador/AdministradorFacultad.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

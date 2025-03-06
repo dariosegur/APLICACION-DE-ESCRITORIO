@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dtos.Basico" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dtos.Basico" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:59293/Administrador/AdministradorFacultad.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Dtos" />
+  <xs:complexType name="Lista_View_Facultad">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Dtos" base="q1:DtoBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Items" nillable="true" type="tns:ArrayOfView_Facultad" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Lista_View_Facultad" nillable="true" type="tns:Lista_View_Facultad" />
+  <xs:complexType name="ArrayOfView_Facultad">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="View_Facultad" nillable="true" type="tns:View_Facultad" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfView_Facultad" nillable="true" type="tns:ArrayOfView_Facultad" />
+  <xs:complexType name="View_Facultad">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Dtos" base="q2:DtoBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Activo" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Codigo" type="xs:int" />
+          <xs:element minOccurs="0" name="FacultadId" type="xs:int" />
+          <xs:element minOccurs="0" name="FechaCreacion" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="FechaModificacion" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="NombreSede" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SedeId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="UsuarioCrea" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UsuarioCreaId" type="xs:long" />
+          <xs:element minOccurs="0" name="UsuarioModificaId" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="UsuarioMoifica" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="View_Facultad" nillable="true" type="tns:View_Facultad" />
+</xs:schema>

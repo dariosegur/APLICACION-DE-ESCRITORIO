@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dtos.Seguridad" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dtos.Seguridad" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:59293/Seguridad/Seguridad.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Dtos" />
+  <xs:complexType name="View_UsuarioAutentica">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Dtos" base="q1:DtoBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Apellidos" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BarCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Codigo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Documento" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FacultadId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="Nombres" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TipoUsuarioId" type="xs:int" />
+          <xs:element minOccurs="0" name="UsuarioId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="View_UsuarioAutentica" nillable="true" type="tns:View_UsuarioAutentica" />
+  <xs:complexType name="Lista_View_Menu">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Dtos" base="q2:DtoBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="MenuOpciones" nillable="true" type="tns:ArrayOfView_Menu" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Lista_View_Menu" nillable="true" type="tns:Lista_View_Menu" />
+  <xs:complexType name="ArrayOfView_Menu">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="View_Menu" nillable="true" type="tns:View_Menu" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfView_Menu" nillable="true" type="tns:ArrayOfView_Menu" />
+  <xs:complexType name="View_Menu">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/Dtos" base="q3:DtoBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Activo" type="xs:boolean" />
+          <xs:element minOccurs="0" name="CreaId" type="xs:long" />
+          <xs:element minOccurs="0" name="Destino" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FechaCreacion" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="FechaModificacion" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Grupo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Imagen" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MenuId" type="xs:int" />
+          <xs:element minOccurs="0" name="ModificaId" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="Orden" type="xs:int" />
+          <xs:element minOccurs="0" name="Texto" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="View_Menu" nillable="true" type="tns:View_Menu" />
+</xs:schema>

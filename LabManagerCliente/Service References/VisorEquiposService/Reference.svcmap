@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2e7d4b45-8490-499f-8070-67e58b5fe206" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:59293/VisorEquipos/VisorEquipos.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="VisorEquipos.disco" MetadataType="Disco" ID="d2102005-516f-4eca-a7fa-780c43827968" SourceId="1" SourceUrl="http://localhost:59293/VisorEquipos/VisorEquipos.svc?disco" />
+    <MetadataFile FileName="VisorEquipos.xsd" MetadataType="Schema" ID="75a1c08a-effb-45e9-aae8-fa05ef30a838" SourceId="1" SourceUrl="http://localhost:59293/VisorEquipos/VisorEquipos.svc?xsd=xsd0" />
+    <MetadataFile FileName="VisorEquipos1.xsd" MetadataType="Schema" ID="0d9f9906-e78c-4aab-ae6e-c8fbdef56922" SourceId="1" SourceUrl="http://localhost:59293/VisorEquipos/VisorEquipos.svc?xsd=xsd1" />
+    <MetadataFile FileName="VisorEquipos2.xsd" MetadataType="Schema" ID="24b1f97a-7391-4fd2-b9e4-05ed1c4f3fc2" SourceId="1" SourceUrl="http://localhost:59293/VisorEquipos/VisorEquipos.svc?xsd=xsd2" />
+    <MetadataFile FileName="VisorEquipos3.xsd" MetadataType="Schema" ID="ec1b0348-2360-4204-83c6-8a17ab120bd1" SourceId="1" SourceUrl="http://localhost:59293/VisorEquipos/VisorEquipos.svc?xsd=xsd3" />
+    <MetadataFile FileName="VisorEquipos.wsdl" MetadataType="Wsdl" ID="0c58ca18-ac17-4eb6-97e2-7129b08251fb" SourceId="1" SourceUrl="http://localhost:59293/VisorEquipos/VisorEquipos.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

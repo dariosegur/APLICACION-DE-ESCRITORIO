@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="177b0d9f-14e1-407a-b5f8-92e18b053ca6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:59293/Gestion/InactivarEstudiante.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="InactivarEstudiante.xsd" MetadataType="Schema" ID="e8a1e3ab-45fe-44bb-8559-637206ccad8c" SourceId="1" SourceUrl="http://localhost:59293/Gestion/InactivarEstudiante.svc?xsd=xsd2" />
+    <MetadataFile FileName="InactivarEstudiante.disco" MetadataType="Disco" ID="045f9576-806d-4fe6-b12d-b2699653c59f" SourceId="1" SourceUrl="http://localhost:59293/Gestion/InactivarEstudiante.svc?disco" />
+    <MetadataFile FileName="InactivarEstudiante1.xsd" MetadataType="Schema" ID="bfc5a3c5-7f3b-42e9-b266-7659d9006295" SourceId="1" SourceUrl="http://localhost:59293/Gestion/InactivarEstudiante.svc?xsd=xsd3" />
+    <MetadataFile FileName="InactivarEstudiante2.xsd" MetadataType="Schema" ID="09c96b40-e0a3-46de-a713-b4def5f19edc" SourceId="1" SourceUrl="http://localhost:59293/Gestion/InactivarEstudiante.svc?xsd=xsd1" />
+    <MetadataFile FileName="InactivarEstudiante3.xsd" MetadataType="Schema" ID="27f36930-e3e7-4309-9561-ed0d74f551b2" SourceId="1" SourceUrl="http://localhost:59293/Gestion/InactivarEstudiante.svc?xsd=xsd0" />
+    <MetadataFile FileName="InactivarEstudiante.wsdl" MetadataType="Wsdl" ID="52c9ca74-a550-42c0-af50-17d87f732ade" SourceId="1" SourceUrl="http://localhost:59293/Gestion/InactivarEstudiante.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

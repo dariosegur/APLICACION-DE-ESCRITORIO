@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dtos.Basico" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dtos.Basico" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:59293/VisorEquipos/VisorEquipos.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Dtos" />
+  <xs:complexType name="Lista_View_Equipo">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Dtos" base="q1:DtoBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Items" nillable="true" type="tns:ArrayOfView_Equipo" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Lista_View_Equipo" nillable="true" type="tns:Lista_View_Equipo" />
+  <xs:complexType name="ArrayOfView_Equipo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="View_Equipo" nillable="true" type="tns:View_Equipo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfView_Equipo" nillable="true" type="tns:ArrayOfView_Equipo" />
+  <xs:complexType name="View_Equipo">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Dtos" base="q2:DtoBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Activo" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" name="CodigoInventario" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CodigoLaboratorio" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Creado" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreadoId" type="xs:long" />
+          <xs:element minOccurs="0" name="EquipoId" type="xs:long" />
+          <xs:element minOccurs="0" name="FechaCompra" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="FechaCreado" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="FechaModificado" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Marca" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Modificado" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModificadoId" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="Referencia" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Serial" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TipoEquipo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TipoEquipoId" type="xs:int" />
+          <xs:element minOccurs="0" name="UsuarioInventarioResponsable" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UsuarioInventarioResponsableCodigoBarras" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UsuarioInventarioResponsableId" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="UsuarioResponsable" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UsuarioResponsableCodigoBarras" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UsuarioResponsableId" nillable="true" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="View_Equipo" nillable="true" type="tns:View_Equipo" />
+</xs:schema>

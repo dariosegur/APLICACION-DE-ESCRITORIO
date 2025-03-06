@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dtos.Basico" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dtos.Basico" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:59293/Administrador/AdministradorDocente.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Dtos" />
+  <xs:complexType name="Lista_View_Docentes">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Dtos" base="q1:DtoBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Items" nillable="true" type="tns:ArrayOfView_Docente" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Lista_View_Docentes" nillable="true" type="tns:Lista_View_Docentes" />
+  <xs:complexType name="ArrayOfView_Docente">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="View_Docente" nillable="true" type="tns:View_Docente" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfView_Docente" nillable="true" type="tns:ArrayOfView_Docente" />
+  <xs:complexType name="View_Docente">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Dtos" base="q2:DtoBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Activo" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Apellidos" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Barcode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Creado" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Documento" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FacultadId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="FacultadNombre" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FechaCreacion" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="FechaModificacion" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Modificado" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Nombres" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UsuarioCreaId" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="UsuarioId" type="xs:long" />
+          <xs:element minOccurs="0" name="UsuarioModificaId" nillable="true" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="View_Docente" nillable="true" type="tns:View_Docente" />
+  <xs:complexType name="Lista_View_Facultad">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/Dtos" base="q3:DtoBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Items" nillable="true" type="tns:ArrayOfView_Facultad" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Lista_View_Facultad" nillable="true" type="tns:Lista_View_Facultad" />
+  <xs:complexType name="ArrayOfView_Facultad">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="View_Facultad" nillable="true" type="tns:View_Facultad" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfView_Facultad" nillable="true" type="tns:ArrayOfView_Facultad" />
+  <xs:complexType name="View_Facultad">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/Dtos" base="q4:DtoBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Activo" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Codigo" type="xs:int" />
+          <xs:element minOccurs="0" name="FacultadId" type="xs:int" />
+          <xs:element minOccurs="0" name="FechaCreacion" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="FechaModificacion" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="NombreSede" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UsuarioCrea" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UsuarioCreaId" type="xs:long" />
+          <xs:element minOccurs="0" name="UsuarioModificaId" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="UsuarioMoifica" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="View_Facultad" nillable="true" type="tns:View_Facultad" />
+  <xs:complexType name="Lista_View_Historial_Docente">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/Dtos" base="q5:DtoBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Items" nillable="true" type="tns:ArrayOfView_Historial_Docente" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Lista_View_Historial_Docente" nillable="true" type="tns:Lista_View_Historial_Docente" />
+  <xs:complexType name="ArrayOfView_Historial_Docente">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="View_Historial_Docente" nillable="true" type="tns:View_Historial_Docente" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfView_Historial_Docente" nillable="true" type="tns:ArrayOfView_Historial_Docente" />
+  <xs:complexType name="View_Historial_Docente">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://schemas.datacontract.org/2004/07/Dtos" base="q6:DtoBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CodigoInventario" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CodigoLaboratorio" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Descripcion" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EquipoId" type="xs:long" />
+          <xs:element minOccurs="0" name="FechaPrestamo" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="FechaRecepcion" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Marca" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PrestamorecepcionId" type="xs:long" />
+          <xs:element minOccurs="0" name="TipoEquipoId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="UsuarioId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="View_Historial_Docente" nillable="true" type="tns:View_Historial_Docente" />
+</xs:schema>

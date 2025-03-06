@@ -1,0 +1,799 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DA911976-B264-4261-8E0E-4C2FB0A6A505}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LabManagerCliente</RootNamespace>
+    <AssemblyName>LabManagerCliente</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clientes\Clientes.cs">
+      <DependentUpon>Clientes.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Extenciones\AdministradorAdministrativo.cs" />
+    <Compile Include="Extenciones\AdministradorRestriccion.cs" />
+    <Compile Include="Extenciones\AdministradorEquipo.cs" />
+    <Compile Include="Extenciones\AdministradorAuxiliar.cs" />
+    <Compile Include="Extenciones\AdministradorFacultad.cs" />
+    <Compile Include="Extenciones\AdministradorSede.cs" />
+    <Compile Include="Extenciones\AdministradorTipoEquipo.cs" />
+    <Compile Include="Extenciones\AdministradorAnotaciones.cs" />
+    <Compile Include="Extenciones\AdministradorDocenteService.cs" />
+    <Compile Include="Extenciones\AdministradorEstudianteService.cs" />
+    <Compile Include="Extenciones\AdministradorMultaService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\AdministradorAdministrativoService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\AdministradorAnotacionService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\AdministradorAuxiliarService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\AdministradorDocenteService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\AdministradorEquipoService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\AdministradorEstudianteService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\AdministradorFacultadService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\AdministradorMultaService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\AdministradorRestriccionService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\AdministradorSedeService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\AdministradorTipoEquipoService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\CopiasDeSeguridadService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\DetallePrestamoRecepcionService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\DeudoresService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\EstadisticasPrestamoEquiposService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\EstadoMultasService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\InactivarEstudianteService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\MantenimientoService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\PrestamoRecepcionService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SeguridadService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\VisorEquiposService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Clientes\Clientes.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Clientes.cs</LastGenOutput>
+    </Content>
+    <None Include="Service References\CopiasDeSeguridadService\LabManagerCliente.CopiasDeSeguridadService.DtoBase.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CopiasDeSeguridadService\LabManagerCliente.CopiasDeSeguridadService.InformacionCopiasDeSeguridad.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CopiasDeSeguridadService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\CopiasDeSeguridadService\configuration.svcinfo" />
+    <None Include="Service References\CopiasDeSeguridadService\configuration91.svcinfo" />
+    <None Include="Service References\CopiasDeSeguridadService\CopiasDeSeguridad.disco" />
+    <None Include="Service References\CopiasDeSeguridadService\CopiasDeSeguridad.wsdl" />
+    <None Include="Service References\CopiasDeSeguridadService\CopiasDeSeguridad.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CopiasDeSeguridadService\CopiasDeSeguridad1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CopiasDeSeguridadService\CopiasDeSeguridad2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CopiasDeSeguridadService\CopiasDeSeguridad3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CopiasDeSeguridadService\CopiasDeSeguridad4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MantenimientoService\LabManagerCliente.MantenimientoService.DtoBase.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MantenimientoService\LabManagerCliente.MantenimientoService.InformacionEliminarEstudiantesInactivos.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MantenimientoService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\MantenimientoService\configuration.svcinfo" />
+    <None Include="Service References\MantenimientoService\configuration91.svcinfo" />
+    <None Include="Service References\MantenimientoService\Mantenimiento.disco" />
+    <None Include="Service References\MantenimientoService\Mantenimiento.wsdl" />
+    <None Include="Service References\MantenimientoService\Mantenimiento.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MantenimientoService\Mantenimiento1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MantenimientoService\Mantenimiento2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MantenimientoService\Mantenimiento3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PrestamoRecepcionService\LabManagerCliente.PrestamoRecepcionService.DtoInt.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PrestamoRecepcionService\LabManagerCliente.PrestamoRecepcionService.RestriccionDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PrestamoRecepcionService\LabManagerCliente.PrestamoRecepcionService.View_EquiposACargo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PrestamoRecepcionService\LabManagerCliente.PrestamoRecepcionService.View_PrestamoRecepcion.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PrestamoRecepcionService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\PrestamoRecepcionService\configuration.svcinfo" />
+    <None Include="Service References\PrestamoRecepcionService\configuration91.svcinfo" />
+    <None Include="Service References\PrestamoRecepcionService\PrestamoRecepcion.disco" />
+    <None Include="Service References\InactivarEstudianteService\LabManagerCliente.InactivarEstudianteService.DtoBase.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\InactivarEstudianteService\LabManagerCliente.InactivarEstudianteService.DtoBool.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\InactivarEstudianteService\LabManagerCliente.InactivarEstudianteService.InformacionInactivar.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\InactivarEstudianteService\LabManagerCliente.InactivarEstudianteService.Lista_View_Parametros.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\InactivarEstudianteService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\InactivarEstudianteService\configuration.svcinfo" />
+    <None Include="Service References\InactivarEstudianteService\configuration91.svcinfo" />
+    <None Include="Service References\InactivarEstudianteService\InactivarEstudiante.disco" />
+    <None Include="Service References\DetallePrestamoRecepcionService\LabManagerCliente.DetallePrestamoRecepcionService.Lista_View_DetallePrestamoRecepcion.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DetallePrestamoRecepcionService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\DetallePrestamoRecepcionService\configuration.svcinfo" />
+    <None Include="Service References\DetallePrestamoRecepcionService\configuration91.svcinfo" />
+    <None Include="Service References\DetallePrestamoRecepcionService\DetallePrestamoRecepcion.disco" />
+    <None Include="Service References\DetallePrestamoRecepcionService\DetallePrestamoRecepcion.wsdl" />
+    <None Include="Service References\DetallePrestamoRecepcionService\DetallePrestamoRecepcion.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DetallePrestamoRecepcionService\DetallePrestamoRecepcion1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DetallePrestamoRecepcionService\DetallePrestamoRecepcion2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DetallePrestamoRecepcionService\DetallePrestamoRecepcion3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EstadoMultasService\LabManagerCliente.EstadoMultasService.Lista_View_EstadoMultas.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\EstadoMultasService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\EstadoMultasService\configuration.svcinfo" />
+    <None Include="Service References\EstadoMultasService\configuration91.svcinfo" />
+    <None Include="Service References\EstadoMultasService\EstadoMultas.disco" />
+    <None Include="Service References\AdministradorEquipoService\LabManagerCliente.AdministradorEquipoService.DtoBool.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\EstadisticasPrestamoEquiposService\LabManagerCliente.EstadisticasPrestamoEquiposService.Lista_View_EstadisticasPrestamoEquipos.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\EstadisticasPrestamoEquiposService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\EstadisticasPrestamoEquiposService\configuration.svcinfo" />
+    <None Include="Service References\EstadisticasPrestamoEquiposService\configuration91.svcinfo" />
+    <None Include="Service References\EstadisticasPrestamoEquiposService\EstadisticasPrestamoEquipos.disco" />
+    <None Include="Service References\DeudoresService\LabManagerCliente.DeudoresService.Lista_View_Deudores.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DeudoresService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\DeudoresService\configuration.svcinfo" />
+    <None Include="Service References\DeudoresService\configuration91.svcinfo" />
+    <None Include="Service References\DeudoresService\Deudores.disco" />
+    <None Include="Service References\AdministradorEquipoService\LabManagerCliente.AdministradorEquipoService.Lista_View_Historial_Equipo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DeudoresService\Deudores.wsdl" />
+    <None Include="Service References\DeudoresService\Deudores.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DeudoresService\Deudores1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DeudoresService\Deudores2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DeudoresService\Deudores3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EstadisticasPrestamoEquiposService\EstadisticasPrestamoEquipos.wsdl" />
+    <None Include="Service References\EstadisticasPrestamoEquiposService\EstadisticasPrestamoEquipos.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EstadisticasPrestamoEquiposService\EstadisticasPrestamoEquipos1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EstadisticasPrestamoEquiposService\EstadisticasPrestamoEquipos2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EstadisticasPrestamoEquiposService\EstadisticasPrestamoEquipos3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EstadoMultasService\EstadoMultas.wsdl" />
+    <None Include="Service References\EstadoMultasService\EstadoMultas.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EstadoMultasService\EstadoMultas1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EstadoMultasService\EstadoMultas2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EstadoMultasService\EstadoMultas3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\InactivarEstudianteService\InactivarEstudiante.wsdl" />
+    <None Include="Service References\InactivarEstudianteService\InactivarEstudiante.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\InactivarEstudianteService\InactivarEstudiante1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\InactivarEstudianteService\InactivarEstudiante2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\InactivarEstudianteService\InactivarEstudiante3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PrestamoRecepcionService\PrestamoRecepcion.wsdl" />
+    <None Include="Service References\PrestamoRecepcionService\PrestamoRecepcion.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PrestamoRecepcionService\PrestamoRecepcion1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PrestamoRecepcionService\PrestamoRecepcion2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PrestamoRecepcionService\PrestamoRecepcion3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PrestamoRecepcionService\PrestamoRecepcion4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\VisorEquiposService\LabManagerCliente.VisorEquiposService.Lista_View_Equipo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\VisorEquiposService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\VisorEquiposService\configuration.svcinfo" />
+    <None Include="Service References\VisorEquiposService\configuration91.svcinfo" />
+    <None Include="Service References\VisorEquiposService\VisorEquipos.disco" />
+    <None Include="Service References\AdministradorSedeService\LabManagerCliente.AdministradorSedeService.DtoBase.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AdministradorSedeService\LabManagerCliente.AdministradorSedeService.Lista_View_Sede.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AdministradorSedeService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\AdministradorSedeService\configuration.svcinfo" />
+    <None Include="Service References\AdministradorSedeService\configuration91.svcinfo" />
+    <None Include="Service References\AdministradorSedeService\AdministradorSede.disco" />
+    <None Include="Service References\AdministradorSedeService\AdministradorSede.wsdl" />
+    <None Include="Service References\AdministradorSedeService\AdministradorSede.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdministradorSedeService\AdministradorSede1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdministradorSedeService\AdministradorSede2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdministradorSedeService\AdministradorSede3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdministradorTipoEquipoService\LabManagerCliente.AdministradorTipoEquipoService.DtoBase.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AdministradorTipoEquipoService\LabManagerCliente.AdministradorTipoEquipoService.Lista_View_TipoEquipo_Activo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AdministradorTipoEquipoService\LabManagerCliente.AdministradorTipoEquipoService.Lista_View_TiposEquipo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AdministradorTipoEquipoService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\AdministradorTipoEquipoService\configuration.svcinfo" />
+    <None Include="Service References\AdministradorTipoEquipoService\configuration91.svcinfo" />
+    <None Include="Service References\AdministradorTipoEquipoService\AdministradorTipoEquipo.disco" />
+    <None Include="Service References\AdministradorRestriccionService\LabManagerCliente.AdministradorRestriccionService.DtoBase.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AdministradorRestriccionService\LabManagerCliente.AdministradorRestriccionService.Lista_View_Restriccion.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AdministradorRestriccionService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\AdministradorRestriccionService\configuration.svcinfo" />
+    <None Include="Service References\AdministradorRestriccionService\configuration91.svcinfo" />
+    <None Include="Service References\AdministradorRestriccionService\AdministradorRestriccion.disco" />
+    <None Include="Service References\AdministradorAdministrativoService\LabManagerCliente.AdministradorAdministrativoService.DtoBase.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AdministradorAdministrativoService\LabManagerCliente.AdministradorAdministrativoService.Lista_View_Administrativo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AdministradorAdministrativoService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\AdministradorAdministrativoService\configuration.svcinfo" />
+    <None Include="Service References\AdministradorAdministrativoService\configuration91.svcinfo" />
+    <None Include="Service References\AdministradorAdministrativoService\AdministradorAdministrativo.disco" />
+    <None Include="Service References\AdministradorAdministrativoService\AdministradorAdministrativo.wsdl" />
+    <None Include="Service References\AdministradorAdministrativoService\AdministradorAdministrativo.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdministradorAdministrativoService\AdministradorAdministrativo1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdministradorAdministrativoService\AdministradorAdministrativo2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdministradorAdministrativoService\AdministradorAdministrativo3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdministradorRestriccionService\AdministradorRestriccion.wsdl" />
+    <None Include="Service References\AdministradorRestriccionService\AdministradorRestriccion.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdministradorRestriccionService\AdministradorRestriccion1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdministradorRestriccionService\AdministradorRestriccion2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdministradorRestriccionService\AdministradorRestriccion3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdministradorTipoEquipoService\AdministradorTipoEquipo.wsdl" />
+    <None Include="Service References\AdministradorTipoEquipoService\AdministradorTipoEquipo.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdministradorTipoEquipoService\AdministradorTipoEquipo1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdministradorTipoEquipoService\AdministradorTipoEquipo2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdministradorTipoEquipoService\AdministradorTipoEquipo3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SeguridadService\LabManagerCliente.SeguridadService.Lista_View_Menu.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SeguridadService\LabManagerCliente.SeguridadService.View_UsuarioAutentica.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SeguridadService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\SeguridadService\configuration.svcinfo" />
+    <None Include="Service References\SeguridadService\configuration91.svcinfo" />
+    <None Include="Service References\SeguridadService\Seguridad.disco" />
+    <None Include="Service References\AdministradorAuxiliarService\LabManagerCliente.AdministradorAuxiliarService.Lista_View_Auxiliar_Activo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AdministradorEquipoService\LabManagerCliente.AdministradorEquipoService.DtoBase.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AdministradorEquipoService\LabManagerCliente.AdministradorEquipoService.Lista_View_Equipo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AdministradorEquipoService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\AdministradorEquipoService\configuration.svcinfo" />
+    <None Include="Service References\AdministradorEquipoService\configuration91.svcinfo" />
+    <None Include="Service References\AdministradorEquipoService\AdministradorEquipo.disco" />
+    <None Include="Service References\AdministradorAuxiliarService\LabManagerCliente.AdministradorAuxiliarService.DtoBase.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AdministradorAuxiliarService\LabManagerCliente.AdministradorAuxiliarService.Lista_View_Auxiliar.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AdministradorAuxiliarService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\AdministradorAuxiliarService\configuration.svcinfo" />
+    <None Include="Service References\AdministradorAuxiliarService\configuration91.svcinfo" />
+    <None Include="Service References\AdministradorAuxiliarService\AdministradorAuxiliar.disco" />
+    <None Include="Service References\AdministradorAuxiliarService\AdministradorAuxiliar.wsdl" />
+    <None Include="Service References\AdministradorAuxiliarService\AdministradorAuxiliar.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdministradorAuxiliarService\AdministradorAuxiliar1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdministradorAuxiliarService\AdministradorAuxiliar2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdministradorAuxiliarService\AdministradorAuxiliar3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdministradorEquipoService\AdministradorEquipo.wsdl" />
+    <None Include="Service References\AdministradorEquipoService\AdministradorEquipo.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdministradorEquipoService\AdministradorEquipo1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdministradorEquipoService\AdministradorEquipo2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdministradorEquipoService\AdministradorEquipo3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdministradorFacultadService\LabManagerCliente.AdministradorFacultadService.DtoBase.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AdministradorFacultadService\LabManagerCliente.AdministradorFacultadService.Lista_View_Facultad.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AdministradorFacultadService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\AdministradorFacultadService\configuration.svcinfo" />
+    <None Include="Service References\AdministradorFacultadService\configuration91.svcinfo" />
+    <None Include="Service References\AdministradorFacultadService\AdministradorFacultad.disco" />
+    <None Include="Service References\AdministradorFacultadService\AdministradorFacultad.wsdl" />
+    <None Include="Service References\AdministradorFacultadService\AdministradorFacultad.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdministradorFacultadService\AdministradorFacultad1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdministradorFacultadService\AdministradorFacultad2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdministradorFacultadService\AdministradorFacultad3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdministradorDocenteService\LabManagerCliente.AdministradorDocenteService.DtoBase.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AdministradorDocenteService\LabManagerCliente.AdministradorDocenteService.Lista_View_Docentes.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AdministradorDocenteService\LabManagerCliente.AdministradorDocenteService.Lista_View_Facultad.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AdministradorDocenteService\LabManagerCliente.AdministradorDocenteService.Lista_View_Historial_Docente.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AdministradorDocenteService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\AdministradorDocenteService\configuration.svcinfo" />
+    <None Include="Service References\AdministradorDocenteService\configuration91.svcinfo" />
+    <None Include="Service References\AdministradorDocenteService\AdministradorDocente.disco" />
+    <None Include="Service References\AdministradorDocenteService\AdministradorDocente.wsdl" />
+    <None Include="Service References\AdministradorDocenteService\AdministradorDocente.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdministradorDocenteService\AdministradorDocente1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdministradorDocenteService\AdministradorDocente2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdministradorDocenteService\AdministradorDocente3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdministradorMultaService\LabManagerCliente.AdministradorMultaService.DtoBase.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AdministradorMultaService\LabManagerCliente.AdministradorMultaService.Lista_View_EstadoMulta.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AdministradorMultaService\LabManagerCliente.AdministradorMultaService.Lista_View_Multas.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AdministradorMultaService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\AdministradorMultaService\configuration.svcinfo" />
+    <None Include="Service References\AdministradorMultaService\configuration91.svcinfo" />
+    <None Include="Service References\AdministradorMultaService\AdministradorMulta.disco" />
+    <None Include="Service References\AdministradorEstudianteService\LabManagerCliente.AdministradorEstudianteService.DtoBase.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AdministradorEstudianteService\LabManagerCliente.AdministradorEstudianteService.Lista_View_Estudiantes.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AdministradorEstudianteService\LabManagerCliente.AdministradorEstudianteService.Lista_View_Facultad.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AdministradorEstudianteService\LabManagerCliente.AdministradorEstudianteService.Lista_View_Historial_Estudiante.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AdministradorEstudianteService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\AdministradorEstudianteService\configuration.svcinfo" />
+    <None Include="Service References\AdministradorEstudianteService\configuration91.svcinfo" />
+    <None Include="Service References\AdministradorEstudianteService\AdministradorEstudiante.disco" />
+    <None Include="Service References\AdministradorAnotacionService\LabManagerCliente.AdministradorAnotacionService.DtoBase.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AdministradorAnotacionService\LabManagerCliente.AdministradorAnotacionService.Lista_View_Anotaciones.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AdministradorAnotacionService\LabManagerCliente.AdministradorAnotacionService.Lista_View_EstadoAnotacion.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AdministradorAnotacionService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\AdministradorAnotacionService\configuration.svcinfo" />
+    <None Include="Service References\AdministradorAnotacionService\configuration91.svcinfo" />
+    <None Include="Service References\AdministradorAnotacionService\AdministradorAnotacion.disco" />
+    <None Include="Service References\AdministradorAnotacionService\AdministradorAnotacion.wsdl" />
+    <None Include="Service References\AdministradorAnotacionService\AdministradorAnotacion.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdministradorAnotacionService\AdministradorAnotacion1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdministradorAnotacionService\AdministradorAnotacion2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdministradorAnotacionService\AdministradorAnotacion3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdministradorEstudianteService\AdministradorEstudiante.wsdl" />
+    <None Include="Service References\AdministradorEstudianteService\AdministradorEstudiante.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdministradorEstudianteService\AdministradorEstudiante1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdministradorEstudianteService\AdministradorEstudiante2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdministradorEstudianteService\AdministradorEstudiante3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdministradorMultaService\AdministradorMulta.wsdl" />
+    <None Include="Service References\AdministradorMultaService\AdministradorMulta.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdministradorMultaService\AdministradorMulta1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdministradorMultaService\AdministradorMulta2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AdministradorMultaService\AdministradorMulta3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SeguridadService\Seguridad.wsdl" />
+    <None Include="Service References\SeguridadService\Seguridad.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SeguridadService\Seguridad1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SeguridadService\Seguridad2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SeguridadService\Seguridad3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\VisorEquiposService\VisorEquipos.wsdl" />
+    <None Include="Service References\VisorEquiposService\VisorEquipos.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\VisorEquiposService\VisorEquipos1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\VisorEquiposService\VisorEquipos2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\VisorEquiposService\VisorEquipos3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\AdministradorAdministrativoService\" />
+    <WCFMetadataStorage Include="Service References\AdministradorAnotacionService\" />
+    <WCFMetadataStorage Include="Service References\AdministradorAuxiliarService\" />
+    <WCFMetadataStorage Include="Service References\AdministradorDocenteService\" />
+    <WCFMetadataStorage Include="Service References\AdministradorEquipoService\" />
+    <WCFMetadataStorage Include="Service References\AdministradorEstudianteService\" />
+    <WCFMetadataStorage Include="Service References\AdministradorFacultadService\" />
+    <WCFMetadataStorage Include="Service References\AdministradorMultaService\" />
+    <WCFMetadataStorage Include="Service References\AdministradorRestriccionService\" />
+    <WCFMetadataStorage Include="Service References\AdministradorSedeService\" />
+    <WCFMetadataStorage Include="Service References\AdministradorTipoEquipoService\" />
+    <WCFMetadataStorage Include="Service References\CopiasDeSeguridadService\" />
+    <WCFMetadataStorage Include="Service References\DetallePrestamoRecepcionService\" />
+    <WCFMetadataStorage Include="Service References\DeudoresService\" />
+    <WCFMetadataStorage Include="Service References\EstadisticasPrestamoEquiposService\" />
+    <WCFMetadataStorage Include="Service References\EstadoMultasService\" />
+    <WCFMetadataStorage Include="Service References\InactivarEstudianteService\" />
+    <WCFMetadataStorage Include="Service References\MantenimientoService\" />
+    <WCFMetadataStorage Include="Service References\PrestamoRecepcionService\" />
+    <WCFMetadataStorage Include="Service References\SeguridadService\" />
+    <WCFMetadataStorage Include="Service References\VisorEquiposService\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dtos.Registro" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dtos.Registro" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:59293/PrestamoRecepcion/PrestamoRecepcion.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Dtos" />
+  <xs:import schemaLocation="http://localhost:59293/PrestamoRecepcion/PrestamoRecepcion.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Dtos.Basico" />
+  <xs:complexType name="View_PrestamoRecepcion">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Dtos" base="q1:DtoBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Activo" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Anotaciones" nillable="true" type="tns:ArrayOfView_AnotacionesActivas" />
+          <xs:element minOccurs="0" name="Apellidos" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BarCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Equipos" nillable="true" type="tns:ArrayOfView_EquiposACargo" />
+          <xs:element minOccurs="0" name="Facultad" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FacultadId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="Multas" nillable="true" type="tns:ArrayOfView_MultasActivas" />
+          <xs:element minOccurs="0" name="Nombres" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SemestreBasico" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="TipoUsuario" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TipoUsuarioId" type="xs:int" />
+          <xs:element minOccurs="0" name="UsuarioId" type="xs:long" />
+          <xs:element minOccurs="0" name="nAnotaciones" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="nEquipos" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="nMultas" nillable="true" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="View_PrestamoRecepcion" nillable="true" type="tns:View_PrestamoRecepcion" />
+  <xs:complexType name="ArrayOfView_AnotacionesActivas">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="View_AnotacionesActivas" nillable="true" type="tns:View_AnotacionesActivas" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfView_AnotacionesActivas" nillable="true" type="tns:ArrayOfView_AnotacionesActivas" />
+  <xs:complexType name="View_AnotacionesActivas">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Dtos" base="q2:DtoBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AnotacionId" type="xs:long" />
+          <xs:element minOccurs="0" name="Descripcion" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Documento" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FechaCreacion" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="NombreCreador" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="NombreModifica" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UsuarioId" nillable="true" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="View_AnotacionesActivas" nillable="true" type="tns:View_AnotacionesActivas" />
+  <xs:complexType name="ArrayOfView_EquiposACargo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="View_EquiposACargo" nillable="true" type="tns:View_EquiposACargo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfView_EquiposACargo" nillable="true" type="tns:ArrayOfView_EquiposACargo" />
+  <xs:complexType name="View_EquiposACargo">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/Dtos" base="q3:DtoBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CodigoLaboratorio" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EquipoId" type="xs:long" />
+          <xs:element minOccurs="0" name="Prestado" type="xs:boolean" />
+          <xs:element minOccurs="0" name="TipoEquipo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UsuarioId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="View_EquiposACargo" nillable="true" type="tns:View_EquiposACargo" />
+  <xs:complexType name="ArrayOfView_MultasActivas">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="View_MultasActivas" nillable="true" type="tns:View_MultasActivas" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfView_MultasActivas" nillable="true" type="tns:ArrayOfView_MultasActivas" />
+  <xs:complexType name="View_MultasActivas">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/Dtos" base="q4:DtoBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Descripcion" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DeudorId" type="xs:long" />
+          <xs:element minOccurs="0" name="Documento" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FechaCreacion" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="FechaModificacion" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="MultaId" type="xs:long" />
+          <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="NombreCreador" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="NombreModifica" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Valor" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="View_MultasActivas" nillable="true" type="tns:View_MultasActivas" />
+  <xs:complexType name="RestriccionDto">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/Dtos" base="q5:DtoBase">
+        <xs:sequence>
+          <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Dtos.Basico" minOccurs="0" name="Restricciones" nillable="true" type="q6:ArrayOfRestriccion" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RestriccionDto" nillable="true" type="tns:RestriccionDto" />
+</xs:schema>

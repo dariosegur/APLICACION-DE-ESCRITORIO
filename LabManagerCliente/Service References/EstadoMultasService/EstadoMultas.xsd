@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dtos.Reportes" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dtos.Reportes" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:59293/Reportes/EstadoMultas.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Dtos" />
+  <xs:complexType name="Lista_View_EstadoMultas">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Dtos" base="q1:DtoBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Items" nillable="true" type="tns:ArrayOfView_EstadoMultas" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Lista_View_EstadoMultas" nillable="true" type="tns:Lista_View_EstadoMultas" />
+  <xs:complexType name="ArrayOfView_EstadoMultas">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="View_EstadoMultas" nillable="true" type="tns:View_EstadoMultas" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfView_EstadoMultas" nillable="true" type="tns:ArrayOfView_EstadoMultas" />
+  <xs:complexType name="View_EstadoMultas">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Dtos" base="q2:DtoBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Descripcion" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Deudor" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DeudorDocumento" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DeudorId" type="xs:long" />
+          <xs:element minOccurs="0" name="EstadoMulta" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EstadoMultaId" type="xs:int" />
+          <xs:element minOccurs="0" name="FechaCrea" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="FechaModifica" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="MultaId" type="xs:long" />
+          <xs:element minOccurs="0" name="TipoDeudor" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UsuarioCrea" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UsuarioCreaId" type="xs:long" />
+          <xs:element minOccurs="0" name="UsuarioModifica" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UsuarioModificaId" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="Valor" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="View_EstadoMultas" nillable="true" type="tns:View_EstadoMultas" />
+</xs:schema>

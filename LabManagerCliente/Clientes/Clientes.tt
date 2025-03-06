@@ -1,0 +1,57 @@
+﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ output extension=".cs" #>
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+<#
+    string ServicePath= @"C:\Dario\USTA\LabManagerII\02_Fuentes\LabManagerII\LabManagerCliente\Service References\";
+	//ServicePath = @"C:\Users\MiguelDesarrollo\Source\Workspaces\LabManagerII\LabManagerCliente\Service References\";
+	//ServicePath = @"F:\.gradle\Maria Carolina Bravo Navarro\LabManagerCliente\Service References\";
+    var carpetas = System.IO.Directory.GetDirectories(ServicePath);
+#>namespace LabManagerCliente
+{
+<#    
+    foreach(var carpeta in carpetas){
+        var servicio= carpeta.Replace(ServicePath,"");
+        var archivo= carpeta+"\\Reference.cs";
+        var info = System.IO.File.ReadAllLines(archivo);
+        var inicioIntereface = Array.IndexOf(info,"    public interface I"+servicio.Replace("Service","")+" {");
+		var finIntereface = Array.IndexOf(info,   "    }",inicioIntereface);
+        #>
+    public class <#=servicio.Replace("Service","Cliente")#>{
+        private static <#=servicio#>.<#=servicio.Replace("Service","Client")#> cliente =
+            new <#=servicio#>.<#=servicio.Replace("Service","Client")#>();
+<#
+        for(int i=inicioIntereface+3; i<finIntereface; i+=6)
+        {
+            string firma=info[i].Replace(";","").Trim();
+            string metodo=firma.Substring(firma.IndexOf(" ")+1, firma.IndexOf("(")-firma.IndexOf(" ")-1);
+            string parametro=firma.Substring(firma.IndexOf("(")+1, firma.LastIndexOf(")")-firma.IndexOf("(")-1);
+            string[] parametros= parametro.Split(new char[]{','});
+            #>
+        public static <#=firma+"\r\n\t\t{"#>
+            var resultado = cliente.<#=metodo #>(<#
+            for(int ip=0;ip<parametros.Count();ip++)
+            {
+                var partes = parametros[ip].Split(new char[]{' '});
+                var nombre = partes[partes.Count()-1];
+                #><#=ip!=0?",":""#><#= nombre#><#
+            }
+#>);
+            if (resultado.Error) throw new Exception(resultado.Mensaje);
+            return resultado;
+        }
+<#
+        }
+        #>
+    }
+<#
+    }
+#>
+}

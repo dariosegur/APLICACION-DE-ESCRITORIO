@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2aa84e8c-9f55-4586-b4fa-0f6cc6cf9548" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:59293/PrestamoRecepcion/PrestamoRecepcion.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PrestamoRecepcion.xsd" MetadataType="Schema" ID="aa8a49ea-b8b5-4396-8955-e2d480270171" SourceId="1" SourceUrl="http://localhost:59293/PrestamoRecepcion/PrestamoRecepcion.svc?xsd=xsd3" />
+    <MetadataFile FileName="PrestamoRecepcion1.xsd" MetadataType="Schema" ID="552173d1-78d2-4e94-b251-998f2ae79045" SourceId="1" SourceUrl="http://localhost:59293/PrestamoRecepcion/PrestamoRecepcion.svc?xsd=xsd0" />
+    <MetadataFile FileName="PrestamoRecepcion2.xsd" MetadataType="Schema" ID="968269d4-4448-4481-88f4-27d42fde6237" SourceId="1" SourceUrl="http://localhost:59293/PrestamoRecepcion/PrestamoRecepcion.svc?xsd=xsd1" />
+    <MetadataFile FileName="PrestamoRecepcion.disco" MetadataType="Disco" ID="a5573206-8f17-49af-a63b-57a15c46809c" SourceId="1" SourceUrl="http://localhost:59293/PrestamoRecepcion/PrestamoRecepcion.svc?disco" />
+    <MetadataFile FileName="PrestamoRecepcion.wsdl" MetadataType="Wsdl" ID="00331b33-8b67-45cb-b55f-bfcbec9aeabd" SourceId="1" SourceUrl="http://localhost:59293/PrestamoRecepcion/PrestamoRecepcion.svc?wsdl" />
+    <MetadataFile FileName="PrestamoRecepcion3.xsd" MetadataType="Schema" ID="0ce2aaad-77c1-403c-a581-f7fcc9ead331" SourceId="1" SourceUrl="http://localhost:59293/PrestamoRecepcion/PrestamoRecepcion.svc?xsd=xsd4" />
+    <MetadataFile FileName="PrestamoRecepcion4.xsd" MetadataType="Schema" ID="aed4523b-4c41-4447-8291-4ca55cd33dfe" SourceId="1" SourceUrl="http://localhost:59293/PrestamoRecepcion/PrestamoRecepcion.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

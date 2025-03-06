@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e9666ba6-9813-4568-be78-1a60105ad22c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:59293/Administrador/AdministradorMulta.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AdministradorMulta.xsd" MetadataType="Schema" ID="74e00c8c-63c3-43a2-8714-b2a184b864d6" SourceId="1" SourceUrl="http://localhost:59293/Administrador/AdministradorMulta.svc?xsd=xsd1" />
+    <MetadataFile FileName="AdministradorMulta1.xsd" MetadataType="Schema" ID="6b8567a1-a9c3-42d2-aed2-5b5159997854" SourceId="1" SourceUrl="http://localhost:59293/Administrador/AdministradorMulta.svc?xsd=xsd3" />
+    <MetadataFile FileName="AdministradorMulta.disco" MetadataType="Disco" ID="5dd72cc2-771b-42eb-8918-0df73baacab8" SourceId="1" SourceUrl="http://localhost:59293/Administrador/AdministradorMulta.svc?disco" />
+    <MetadataFile FileName="AdministradorMulta2.xsd" MetadataType="Schema" ID="2e59022b-b7d1-49eb-bd78-ebd29e4c0daf" SourceId="1" SourceUrl="http://localhost:59293/Administrador/AdministradorMulta.svc?xsd=xsd0" />
+    <MetadataFile FileName="AdministradorMulta.wsdl" MetadataType="Wsdl" ID="8e2cefa9-ef9a-4dca-8884-d9b8e6ae76ad" SourceId="1" SourceUrl="http://localhost:59293/Administrador/AdministradorMulta.svc?wsdl" />
+    <MetadataFile FileName="AdministradorMulta3.xsd" MetadataType="Schema" ID="de56d540-f151-4ac0-bc64-fcd1a7f0086e" SourceId="1" SourceUrl="http://localhost:59293/Administrador/AdministradorMulta.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

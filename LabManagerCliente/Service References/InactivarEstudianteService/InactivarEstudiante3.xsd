@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:59293/Gestion/InactivarEstudiante.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Dtos.Gestion" />
+  <xs:import schemaLocation="http://localhost:59293/Gestion/InactivarEstudiante.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Dtos" />
+  <xs:element name="getParametros">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FiltroTexto" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="UsuarioId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getParametrosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Dtos.Gestion" minOccurs="0" name="getParametrosResult" nillable="true" type="q1:Lista_View_Parametros" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getInformacionInactivar">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getInformacionInactivarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Dtos.Gestion" minOccurs="0" name="getInformacionInactivarResult" nillable="true" type="q2:InformacionInactivar" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InactivarEstudiantes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UsuarioId" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InactivarEstudiantesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Dtos" minOccurs="0" name="InactivarEstudiantesResult" nillable="true" type="q3:DtoBase" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActivarEstudiantes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UsuarioId" type="xs:long" />
+        <xs:element minOccurs="0" name="UsuarioIdActivar" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActivarEstudiantesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Dtos" minOccurs="0" name="ActivarEstudiantesResult" nillable="true" type="q4:DtoBase" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsUserActive">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="BarCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IsUserActiveResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Dtos" minOccurs="0" name="IsUserActiveResult" nillable="true" type="q5:DtoBool" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

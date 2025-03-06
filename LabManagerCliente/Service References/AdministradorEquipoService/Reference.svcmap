@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="83624be7-6673-4e12-9483-70ecb4041cb5" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:59293/Administrador/AdministradorEquipo.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AdministradorEquipo.xsd" MetadataType="Schema" ID="7f713b7d-2659-4a39-8034-61972a9ee7b3" SourceId="1" SourceUrl="http://localhost:59293/Administrador/AdministradorEquipo.svc?xsd=xsd3" />
+    <MetadataFile FileName="AdministradorEquipo1.xsd" MetadataType="Schema" ID="fd6de87d-40c7-4ded-be87-a4ee230662ad" SourceId="1" SourceUrl="http://localhost:59293/Administrador/AdministradorEquipo.svc?xsd=xsd2" />
+    <MetadataFile FileName="AdministradorEquipo2.xsd" MetadataType="Schema" ID="08263425-9275-4e2a-9008-1febf99b84d9" SourceId="1" SourceUrl="http://localhost:59293/Administrador/AdministradorEquipo.svc?xsd=xsd1" />
+    <MetadataFile FileName="AdministradorEquipo3.xsd" MetadataType="Schema" ID="f4a740f9-8625-458d-8573-d8979a3e7bf1" SourceId="1" SourceUrl="http://localhost:59293/Administrador/AdministradorEquipo.svc?xsd=xsd0" />
+    <MetadataFile FileName="AdministradorEquipo.wsdl" MetadataType="Wsdl" ID="82de68c7-e775-45ac-8233-b2d5b2536aba" SourceId="1" SourceUrl="http://localhost:59293/Administrador/AdministradorEquipo.svc?wsdl" />
+    <MetadataFile FileName="AdministradorEquipo.disco" MetadataType="Disco" ID="aac7e791-f91c-43a7-8d94-714acc1c3f0f" SourceId="1" SourceUrl="http://localhost:59293/Administrador/AdministradorEquipo.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

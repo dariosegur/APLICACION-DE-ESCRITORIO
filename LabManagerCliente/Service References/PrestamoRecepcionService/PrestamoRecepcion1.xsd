@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:59293/PrestamoRecepcion/PrestamoRecepcion.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Dtos.Registro" />
+  <xs:import schemaLocation="http://localhost:59293/PrestamoRecepcion/PrestamoRecepcion.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Dtos" />
+  <xs:element name="getInfoPrestamoRecepcion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="BarCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getInfoPrestamoRecepcionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Dtos.Registro" minOccurs="0" name="getInfoPrestamoRecepcionResult" nillable="true" type="q1:View_PrestamoRecepcion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getRestriccionesEquipo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="barCodeEquipo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getRestriccionesEquipoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Dtos.Registro" minOccurs="0" name="getRestriccionesEquipoResult" nillable="true" type="q2:RestriccionDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PrestarRecibirEquipo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="usuarioId" type="xs:int" />
+        <xs:element minOccurs="0" name="auxiliarId" type="xs:int" />
+        <xs:element minOccurs="0" name="FacultadId" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="SemestreBasico" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="barCodeEquipo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="operacionManual" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PrestarRecibirEquipoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Dtos.Registro" minOccurs="0" name="PrestarRecibirEquipoResult" nillable="true" type="q3:View_EquiposACargo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getTimeLogOut">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getTimeLogOutResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Dtos" minOccurs="0" name="getTimeLogOutResult" nillable="true" type="q4:DtoInt" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Dtos.Gestion" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Dtos.Gestion" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:59293/Gestion/InactivarEstudiante.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Dtos" />
+  <xs:complexType name="Lista_View_Parametros">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Dtos" base="q1:DtoBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Items" nillable="true" type="tns:ArrayOfParametro" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Lista_View_Parametros" nillable="true" type="tns:Lista_View_Parametros" />
+  <xs:complexType name="ArrayOfParametro">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Parametro" nillable="true" type="tns:Parametro" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfParametro" nillable="true" type="tns:ArrayOfParametro" />
+  <xs:complexType name="Parametro">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Dtos" base="q2:DtoBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Descripcion" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ParametroId" type="xs:int" />
+          <xs:element minOccurs="0" name="Valor" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Parametro" nillable="true" type="tns:Parametro" />
+  <xs:complexType name="InformacionInactivar">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/Dtos" base="q3:DtoBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="EstudiantesActivos" type="xs:int" />
+          <xs:element minOccurs="0" name="EstudiantesInactivos" type="xs:int" />
+          <xs:element minOccurs="0" name="EstudiantesTotal" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InformacionInactivar" nillable="true" type="tns:InformacionInactivar" />
+</xs:schema>

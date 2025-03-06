@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8ebf700d-4eff-47bb-b204-20e517c2ec29" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:59293/Reportes/Deudores.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Deudores.disco" MetadataType="Disco" ID="1bd16063-8ad5-42bb-a7bd-ef6c02f225f2" SourceId="1" SourceUrl="http://localhost:59293/Reportes/Deudores.svc?disco" />
+    <MetadataFile FileName="Deudores.wsdl" MetadataType="Wsdl" ID="dff8e1cd-4a39-44bf-b6cd-cb9b15f4ebf2" SourceId="1" SourceUrl="http://localhost:59293/Reportes/Deudores.svc?wsdl" />
+    <MetadataFile FileName="Deudores.xsd" MetadataType="Schema" ID="d0085b15-839a-4723-aac2-f664dd340ef5" SourceId="1" SourceUrl="http://localhost:59293/Reportes/Deudores.svc?xsd=xsd1" />
+    <MetadataFile FileName="Deudores1.xsd" MetadataType="Schema" ID="9f3228e3-2f94-4970-ab96-04d92342636c" SourceId="1" SourceUrl="http://localhost:59293/Reportes/Deudores.svc?xsd=xsd0" />
+    <MetadataFile FileName="Deudores2.xsd" MetadataType="Schema" ID="0844254d-18e8-41f0-addc-2c1a170b5a3b" SourceId="1" SourceUrl="http://localhost:59293/Reportes/Deudores.svc?xsd=xsd3" />
+    <MetadataFile FileName="Deudores3.xsd" MetadataType="Schema" ID="3a495bb0-60ba-488b-969a-16a6e82d8d93" SourceId="1" SourceUrl="http://localhost:59293/Reportes/Deudores.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

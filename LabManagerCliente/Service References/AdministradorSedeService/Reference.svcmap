@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="99f3964c-8c0c-4070-95a9-c2d37a96777f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:59293/Administrador/AdministradorSede.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AdministradorSede.disco" MetadataType="Disco" ID="c14ebb44-7b7d-47cf-89a5-9e024f5624ff" SourceId="1" SourceUrl="http://localhost:59293/Administrador/AdministradorSede.svc?disco" />
+    <MetadataFile FileName="AdministradorSede.xsd" MetadataType="Schema" ID="52da383e-8613-47e3-b415-19847d6c65d9" SourceId="1" SourceUrl="http://localhost:59293/Administrador/AdministradorSede.svc?xsd=xsd3" />
+    <MetadataFile FileName="AdministradorSede1.xsd" MetadataType="Schema" ID="4f630c13-3ac0-4ddc-a4fe-a1255fe4ad5c" SourceId="1" SourceUrl="http://localhost:59293/Administrador/AdministradorSede.svc?xsd=xsd0" />
+    <MetadataFile FileName="AdministradorSede2.xsd" MetadataType="Schema" ID="08ddea1d-e074-45fb-96b0-66dea2965a9d" SourceId="1" SourceUrl="http://localhost:59293/Administrador/AdministradorSede.svc?xsd=xsd2" />
+    <MetadataFile FileName="AdministradorSede3.xsd" MetadataType="Schema" ID="a8d1ff15-7b7b-4321-b0c3-9647f1605419" SourceId="1" SourceUrl="http://localhost:59293/Administrador/AdministradorSede.svc?xsd=xsd1" />
+    <MetadataFile FileName="AdministradorSede.wsdl" MetadataType="Wsdl" ID="ac3ec92f-f736-452f-b329-05459f426199" SourceId="1" SourceUrl="http://localhost:59293/Administrador/AdministradorSede.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

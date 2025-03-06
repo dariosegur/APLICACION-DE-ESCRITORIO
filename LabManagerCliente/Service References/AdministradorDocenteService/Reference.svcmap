@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="918a19c2-fdce-4130-a853-d9c955796f39" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:59293/Administrador/AdministradorDocente.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AdministradorDocente.wsdl" MetadataType="Wsdl" ID="18081017-db14-40d1-915e-08b6236e5af5" SourceId="1" SourceUrl="http://localhost:59293/Administrador/AdministradorDocente.svc?wsdl" />
+    <MetadataFile FileName="AdministradorDocente.disco" MetadataType="Disco" ID="3814a92c-23b8-4263-98f1-926b002db552" SourceId="1" SourceUrl="http://localhost:59293/Administrador/AdministradorDocente.svc?disco" />
+    <MetadataFile FileName="AdministradorDocente.xsd" MetadataType="Schema" ID="2ee6a9e1-aec0-4aa4-b34d-3339735a6c41" SourceId="1" SourceUrl="http://localhost:59293/Administrador/AdministradorDocente.svc?xsd=xsd1" />
+    <MetadataFile FileName="AdministradorDocente1.xsd" MetadataType="Schema" ID="268950eb-4ffc-4906-9d49-f5a789ffe2ca" SourceId="1" SourceUrl="http://localhost:59293/Administrador/AdministradorDocente.svc?xsd=xsd0" />
+    <MetadataFile FileName="AdministradorDocente2.xsd" MetadataType="Schema" ID="90472ed1-e98d-41bf-addf-96407f1a7559" SourceId="1" SourceUrl="http://localhost:59293/Administrador/AdministradorDocente.svc?xsd=xsd3" />
+    <MetadataFile FileName="AdministradorDocente3.xsd" MetadataType="Schema" ID="4311e7f4-5617-4112-9fbf-37efe5e7448e" SourceId="1" SourceUrl="http://localhost:59293/Administrador/AdministradorDocente.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
