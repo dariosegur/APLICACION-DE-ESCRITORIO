@@ -1,1 +1,2 @@
 # APLICACION-DE-ESCRITORIO
+Es necesario actualizar el sistema de préstamo y recepción de equipos que emplea la universidad santo tomas en los laboratorios ETM para solucionar problemas de seguridad y escalabilidad que presenta el sistema actual. Se cambia la arquitectura por una orientada a servicios. La aplicación actual es la que da la cara al usuario y permite el proceso de préstamo y recepción de equipos empleando los lectores de código de barras.
